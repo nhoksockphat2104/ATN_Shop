@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+{{>head title=this.title subpage='Page ATN Shop Toys' }}
+
+<style>
+    #slider{
+	padding-top: 450px;
+	margin-top: 50px;
+	background: url('slide2_image.jpg') top center / cover no-repeat;
+	position: relative;
+}
+#slider .text-content {
+	position: absolute;
+	bottom: 40px;
+	width: 100%;
+	text-align: center;
+}
+#slider .text-heading {
+	font-size: 25px;
+	color: aqua;
+	font-weight: 600;
+}
+#slider .text-description {
+	font-size: 15px;
+	margin-top: 25px;
+	color: aqua;
+}
+
+.btn-primary{
+	margin: 15px;
+	padding: 10px;
+}
+</style>
+<body>
+    {{>header  title=this.title}} 
+
+<!--- Slider --->
+
+	<div id="slider">
+		<div class="text-content">
+			<div class="text-heading">ATN Shop Toys</div>
+			<div class="text-description">Order</div>
+		</div>
+	</div>
+
+        <main>
+        <div class="container">       
+            <form action="/product" method="POST" >
+                <BR> ProductName:
+                <input type="text" class="form-control" name="ProductName" id="ProductName">
+                <BR> ProductCode:
+                <input type="text" class="form-control" name="ProductCode" id="ProductCode">
+                <BR> Amount:
+                <input  type="number" class="form-control" name="Information" id="Amounts"></intput>
+                <BR> Price:
+                <input type="text" class="form-control" name="Price" id="Price">
+                <input type="submit" class="btn-primary" value="Payment">
+            </form>
+        </div>        
+    </main>
+    
+
+    {{>footer}}
+</body>
+
+</html>

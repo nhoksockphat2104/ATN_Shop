@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+{{>head title=this.title subpage='Page ATN Shop Toys' }}
+
+<style>
+    .container-2{
+	width: 100%;
+	margin: auto;
+}
+.row-2{
+	display: flex;
+	justify-content: space-around;
+}
+.box-1{
+	border-radius: 3px;
+	border: 0px grey solid;
+	background: white;
+	text-align: center;
+	margin: 100px 15px;
+}
+.box-1 h1{
+	color: orange;
+	font-size: 18px;
+	text-shadow: 1px 3px 5px orange;
+	font-weight: 500;
+	text-align: left;
+}
+.box-1 h2{
+	color: orange;
+	font-size: 15px;
+	font-weight: 500;
+	text-align: left;
+	padding-bottom: 15px;
+}
+
+.box-1 p{
+	color: black;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: Bahnschrift Light;
+	text-align: left;
+}
+.box-1 button{
+	color: white;
+    background-color: black;
+	font-size: 17px;
+	box-shadow: 1px 0 2px white;
+	border: none;
+	border-radius: 3px;
+	padding: 5px;
+}
+.box-1 button:hover{
+	color: green;
+}
+.bg-2{
+	background: white;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	margin-left: 18px;
+	border-radius: 3px;
+}
+.row-3{
+	display: flex;
+	justify-content: center;
+}
+.content-2{
+	text-align: left;
+}
+.content-2 p{
+	font-size: 20px;
+	text-shadow: 1px 0 2px orange;
+	color: black;
+	font-weight: 500;
+	padding-left: 10px;
+}
+.content-2 h3{
+	margin-left: 10px;
+}
+.content-2 button{
+	background: orange;
+	color: white;
+	font-size: 20px;
+	box-shadow: 1px 0 2px white;
+	border: none;
+	border-radius: 3px;
+	padding: 3px 5px;
+	margin-left: 10px;
+}
+	.bg-2 li{
+		list-style-type: none;
+		text-align: left;
+		margin: 12px;
+	}
+	#slider{
+	padding-top: 450px;
+	margin-top: 50px;
+	background: url('slide2_image.jpg') top center / cover no-repeat;
+	position: relative;
+}
+#slider .text-content {
+	position: absolute;
+	bottom: 40px;
+	width: 100%;
+	text-align: center;
+}
+#slider .text-heading {
+	font-size: 25px;
+	color: aqua;
+	font-weight: 600;
+}
+#slider .text-description {
+	font-size: 15px;
+	margin-top: 25px;
+	color: aqua;
+}
+
+#product-new {
+	border: none;
+	margin-left: -1300px;
+}
+#product-edit{
+	border: none;
+	margin-left: -1300px;
+	margin-top: 10px;
+}
+#product-update{
+	border: none;
+	margin-left: -1300px;
+	margin-top: 10px;
+}
+#product-delete{
+	border: none;
+	margin-left: -1300px;
+	margin-top: 10px;
+}
+</style>
+<body>
+    <div id="main-1">
+    {{>header  title=this.title}}
+
+	<!--- Slider --->
+
+	<div id="slider">
+		<div class="text-content">
+			<div class="text-heading">ATN Shop Toys</div>
+			<div class="text-description">Products</div>
+		</div>
+	</div>
+
+    <div class="container-2">
+        <div class="bg-2">
+			<div class="row-3">
+				<div class="box-1">
+					<div id="product-new">
+						<a href="product/new"><button type="button">Add Product</button></a>
+					</div>
+					<div id="product-edit">
+						<a href="product/edit"><button type="button">Edit Product</button></a>
+					</div>
+					<div id="product-update">
+						<a href="product/update"><button type="button">Update Product</button></a>
+					</div>
+					<div class="row-3">
+						{{#each product}}
+                        <li>             
+                            <img height="300px" src="{{ImgLink}}">
+                            <h4> Thông tin sản phẩm</h4>
+                            <p><h5>ID: {{ProductCode}}</h5></p>
+                            <h5>{{ProductName}}</h5>
+                            <h5>Price: {{Price}}</h5>
+                            <h5>Made in: {{Unit}}</h5>
+                            <h5>Describe: {{Describe}}</h5>
+                            <a href="/order"><button type="button">THÊM VÀO GIỎ HÀNG</button></a>              
+                        </li>
+                        {{/each}}
+					</div>
+				</div>   
+            </div>
+        </div>
+
+    {{>footer}}
+</body>
+
+</html>

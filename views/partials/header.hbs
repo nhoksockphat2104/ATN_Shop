@@ -1,0 +1,86 @@
+<style>
+  html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  #header{
+    height: 50px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  #nav{
+    list-style-type: none;
+    display: inline-block;
+  }
+
+  #nav li a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0 24px;
+    display: inline-block;
+  }
+
+  #nav li:hover a {
+    color: aqua;
+    background-color: #000;
+  }
+  
+  #nav li{
+    display: inline-block;
+    line-height: 50px;
+  }
+
+  #nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: chartreuse;
+  }
+
+  #header .search-btn{
+    float: right;
+    padding: 10px; 
+  }
+
+  #header .search-btn .search{
+    border: none;
+  	outline: none;
+  	border-radius: 10px 10px;
+    margin: 0;
+  }
+
+  #header .search-btn .btn-search{
+    color: white;
+    background-color: #000;
+    border: none;
+    padding: 0 5 5px;
+  }
+
+  #header .btn-search:hover{
+    color: aqua;
+  }
+</style>
+<header> 
+<div id="header">
+  <ul id="nav">
+    <a href="#" class="nav-brand">ATN Shop Toys</a>
+    <li><a href="/home">Home</a></li>
+    <li><a href="#profile">Profile</a></li>
+    <li><a href="#newproduct">New Product</a></li>
+    <li><a href="/product">Product</a></li>
+    <li><a href="/order">Order</a></li>
+    <li><a href="/login">Login</a></li>
+    <li><a href="/register">Register</a></li>
+  </ul>
+  <div class="search-btn">
+    <input class="search" type="search" placeholder="Search">
+    <a href="/"><button class= "btn-search" type="submit" value="Search">Search</button></a>
+  </div>
+</div>
+</header>

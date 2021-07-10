@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+{{>head title=this.title subpage='Page X' }}
+
+<style>
+    #slider{
+	padding-top: 450px;
+	margin-top: 50px;
+	background: url('slide2_image.jpg') top center / cover no-repeat;
+	position: relative;
+}
+#slider .text-content {
+	position: absolute;
+	bottom: 40px;
+	width: 100%;
+	text-align: center;
+}
+#slider .text-heading {
+	font-size: 25px;
+	color: aqua;
+	font-weight: 600;
+}
+#slider .text-description {
+	font-size: 15px;
+	margin-top: 25px;
+	color: aqua;
+}
+
+.btn-primary{
+    margin: 15px;
+    padding: 10px;
+}
+</style>
+<body>
+    <main>
+        {{>header  title=this.title}}
+        
+         <!--- Slider --->
+        <div id="slider">
+			<div class="text-content">
+				<div class="text-heading">ATN Shop Toys</div>
+				<div class="text-description">Add Product</div>
+			</div>
+		</div>
+
+        <!--- Content --->
+        <div class="container">
+            <H1 height="150px">{{title}}</H1>
+            
+            <form action="/product" method="POST" >
+                <BR> ProductName:
+                <input type="text" class="form-control" name="ProductName" id="ProductName" required>
+                <BR> Information:
+                <textarea  type="text" class="form-control" name="Information" id="Information" rows="3" required></textarea>
+                <BR> Price:
+                <input type="number" class="form-control" name="Price" id="Price" required>
+                <BR> Unit:
+                <input type="text" class="form-control" name="Unit" id="Unit" required>
+                <input type="submit" class="btn-primary" value="Edit" required>
+            </form>
+        </div>        
+    </main>  
+    {{>footer}}
+</body>
+
+</html>

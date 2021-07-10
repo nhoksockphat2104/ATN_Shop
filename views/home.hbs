@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>head title=this.title subpage='Page ATN Shop Toys'}} 
+</head>
+
+<style>
+#slider{
+	padding-top: 450px;
+	margin-top: 50px;
+	background: url('slide2_image.jpg') top center / cover no-repeat;
+	position: relative;
+}
+#slider .text-content {
+	position: absolute;
+	bottom: 40px;
+	width: 100%;
+	text-align: center;
+}
+#slider .text-heading {
+	font-size: 25px;
+	color: aqua;
+	font-weight: 600;
+}
+#slider .text-description {
+	font-size: 15px;
+	margin-top: 25px;
+	color: aqua;
+}
+
+#content{
+
+}
+#content .content-section{
+	width: 1000px;
+	padding: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.section-heading{
+	text-align: center;
+	letter-spacing: 4px;
+}
+
+.section-sub-heading{
+	text-align: center;
+	font-size: 15px;
+	margin-top: 20px;
+	font-style: italic;
+	color: grey;
+
+}
+#content .about-text{
+	margin-top: 23px;
+	font-size: 16px;
+	line-height: 1.5;
+}
+.show-new-product-section{
+	background: url('testimonial_img.jpg') top center / cover no-repeat;
+	width: 100%;
+}
+.show-new-product-section .section-heading{
+	font-size: 30px;
+	color: ghostwhite;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.show-new-product-section .section-sub-heading{
+	text-align: center;
+	font-size: 15px;
+	margin-top: 20px;
+	font-style: italic;
+	color: white;
+}
+.product-list {
+	margin-top: 100px;
+}
+.product-item {
+	display: table-cell;
+	width: 33.33333%;
+	padding: 0 8px;
+}
+.place-img {
+	width: 100%;
+
+}
+.product-body {
+	background-color: #fff;
+	padding: 16px;
+}
+.product-heading {
+	font-size: 22px;
+	font-weight: 600;
+}
+.product-id {
+	margin-top: 18px;	
+}
+.product-price {
+	margin-top: 18px;
+}
+.place-buy-btn {
+	text-decoration: none;
+	color: #fff;
+	background-color: black;
+	padding: 11px 16px;
+	display: inline-block;
+	margin-top: 12px;
+}
+.a .place-buy-btn :hover{
+	color: black;
+	background-color: gray;
+}
+</style>
+
+<body>
+    <div id="main">
+
+        {{>header  title=this.title}}
+
+		<!--- Slider --->
+
+		<div id="slider">
+			<div class="text-content">
+				<div class="text-heading">ATN Shop Toys</div>
+				<div class="text-description">Thế Giới Anime</div>
+			</div>
+		</div>
+
+		<div id="content">
+			<!-- Profile --->
+
+			<div id="profile" class="content-section">
+				<h2 class="section-heading">PROFILE</h2>
+				<p class="section-sub-heading">About my shop</p>
+				<p class="about-text">
+					<strong>ATN Shop Toys với tiêu chí là thiên đường dành cho fan Manga Anime nên shop quy tụ hầu hết các sản phẩm đặc trưng của truyện tranh và hoạt hình Nhật Bản.</strong> <br> <br>
+Gian hàng của <strong>ATN Shop Toys</strong> nổi bật với các sản phẩm như các tượng (figure), tượng lắp ráp (nendoroid, figma), tượng theo bộ, các phụ kiện dành cho cosplay như kẹp tai mèo, tai thỏ, phi tiêu, kiếm gỗ. Ngoài ra, shop còn có các sản phẩm như bóp ví, túi xách, balo, đồng hồ, nón, thú bông, búp bê, áo thun của Anime Manga. <br> <br> Shop đã hoạt động hơn 3 năm nay. Bạn có thể mua hàng tại địa chỉ 146A Phan Văn Trị, P12, Q. Bình Thạnh, TPHCM hoặc mua hàng online tại: <br> <br>
+Trang chủ: <a href="https://www.facebook.com/hoangvanphat2104/">https://www.facebook.com/hoangvanphat2104/</a> <br>
+Hotline: 0931820743
+				</p>
+				<img src="bg-newsletter.jpg" alt="#" class="section-map" width="100%">
+			</div>
+			
+			<!-- New Product --->
+			<div class="show-new-product-section">
+				<div id="newproduct" class="content-section">
+					<h2 class="section-heading">NEW PRODUCT</h2>
+					<p class="section-sub-heading">Anime Model</p>
+
+					<div class="product-list">
+						<div class="product-item">
+							<img src="ace-luffy-sabo-one-piece-attack-styling-figs086.jpg" alt="Mô hình Ace-Luffy-Sabo" class="place-img" width="50%">
+							<div class="product-body">
+								<h4 class="product-heading">Mô Hình Bộ 3 Ace - Luffy - Sabo</h4>
+								<p class="product-id">ID: Anime001</p>
+								<p class="product-price">Price: 290,000 Đ</p>
+								<a href="/order" class="place-buy-btn">THÊM VÀO GIỎ HÀNG</a>
+							</div>
+						</div>
+						<div class="product-item">
+							<img src="fig445-kaneki-ken-gk-2-1-400x400.jpg" alt="Mô hình Ace-Luffy-Sabo" class="place-img" width="100%">
+							<div class="product-body">
+								<h4 class="product-heading">Mô Hình Bộ Kaneki Ken</h4>
+								<p class="product-id">ID: Anime002</p>
+								<p class="product-price">Price: 700,000 Đ</p>
+								<a href="/order" class="place-buy-btn">THÊM VÀO GIỎ HÀNG</a>
+							</div>
+						</div>
+						<div class="product-item">
+							<img src="fig773-madara-uchiha-hoa-than-3-mat-4-400x400.jpg" alt="Mô hình Ace-Luffy-Sabo" class="place-img" width="100%">
+							<div class="product-body">
+								<h4 class="product-heading">Mô Hình Uchiha Madara</h4>
+								<p class="product-id">ID: Anime003</p>
+								<p class="product-price">Price: 370,000 Đ</p>
+								<a href="/order" class="place-buy-btn">THÊM VÀO GIỎ HÀNG</a>
+							</div>
+						</div>
+						<div class="clear"></div>					
+					</div>
+				</div>
+			</div>
+		</div>
+							
+</body>
+{{>footer}}  
+</html>
+
+

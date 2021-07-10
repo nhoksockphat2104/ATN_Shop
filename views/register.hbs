@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+{{>head title=this.title subpage='Page X' }}
+
+<style>
+    .sign-up{
+	width: 450px;
+	height: 640px;
+	border: 1px solid black;
+	border-radius: 10px;
+	text-align: center;
+	margin: auto;
+	margin-top: 80px;
+	background: white;
+	margin-bottom: 200px;
+}
+.sign-up label{
+	text-align: center;
+
+}
+.sign-up h2{
+	color: skyblue;
+	font-family: sans-serif;
+	margin-top: 30px;
+	margin-bottom: 25px;
+}
+.sign-up input{
+	width: 200px;
+	height: 40px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	text-align: left;
+}
+.sign-up button{
+	width: 200px;
+	height: 40px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: none;
+	background: skyblue;
+	color: white;
+	font-size: 20px;
+}
+.sign-up button:hover{
+	font-size: 24px;
+}
+#slider{
+	padding-top: 450px;
+	margin-top: 50px;
+	background: url('slide2_image.jpg') top center / cover no-repeat;
+	position: relative;
+}
+#slider .text-content {
+	position: absolute;
+	bottom: 40px;
+	width: 100%;
+	text-align: center;
+}
+#slider .text-heading {
+	font-size: 25px;
+	color: aqua;
+	font-weight: 600;
+}
+#slider .text-description {
+	font-size: 15px;
+	margin-top: 25px;
+	color: aqua;
+}
+</style>
+<body>
+
+    <main>
+        {{>header  title=this.title}}
+
+		<!--- Slider --->
+
+		<div id="slider">
+			<div class="text-content">
+				<div class="text-heading">ATN Shop Toys</div>
+				<div class="text-description">Register</div>
+			</div>
+		</div>
+        
+        <section class="signup">
+		<form action="/login">
+		<div class="sign-up">
+			<h2>REGISTER</h2>
+			<label for="fname">Full Name:</label>
+  			<input type="text" id="fname" name="fname"><br><br>
+			<label for="username">User Name:</label>
+  			<input type="text" id="username" name="username"><br><br>
+  			<label for="password">Enter Password:</label>
+			<input type="password" id="password" name="password"><br><br>
+			<label for="password">Enter Password Again:</label>
+			<input type="password" id="password" name="password"><br><br>
+			<label for="email">Enter Email:</label>
+		  	<input type="email" id="email" name="email"><br><br>
+		  	<label for="phonenumber">Phone Number:</label>
+		  	<input type="text" id="phonenumber" name="phonenumber"><br><br>
+			<button>SIGN UP</button><br><br>
+		</div>
+		</form>
+	</section>
+    </main>
+    
+
+    {{>footer}}
+</body>
+
+</html>
